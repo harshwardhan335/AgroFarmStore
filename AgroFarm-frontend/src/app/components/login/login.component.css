@@ -1,0 +1,22 @@
+.gradient-custom {
+ 
+  background: linear-gradient(
+    to right,
+    /* rgba(255, 255, 255, 0),
+    rgba(111, 151, 220, 0) */
+  );
+}
+
+.loginimg{
+  background-image: url("C:/Users/2317389/OneDrive - Cognizant/Desktop/AgroFarm/AgroFarm-front/src/assets/loginpage.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+.card-body{
+  background-color: rgba(167, 238, 238, 0.735);
+  padding-bottom: 10px;
+}
+.fw-bold{
+  text-decoration:darkseagreen;
+}

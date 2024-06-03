@@ -1,0 +1,32 @@
+/* .backgroud-image{
+    background-image: url("https://t4.ftcdn.net/jpg/02/43/52/57/240_F_243525780_r8sdu06FUxVmqvf3YUthU5s9nE0z0lhh.jpg");
+}
+.text-primary{
+    padding: 10px;
+    text-align: center;
+    background-color: green;
+    
+}
+.image{
+   width: auto;
+   height: 100vh;
+} */
+.background-image{
+    /* background-image: url("C:\Users\2317389\OneDrive - Cognizant\Desktop\AgroFarm\AgroFarm-front\src\assets\adminpage2.jpg"); */
+    height: 100vh; 
+    background-size: cover; 
+}
+.text-primary{
+    padding: 100px;
+    text-align: center;
+    background-color: green;
+}
+.image{
+   width: auto;
+   height: 100vh;
+}
+h1{
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(16, 3, 158);
+}

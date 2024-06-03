@@ -1,0 +1,200 @@
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+        <div class="card bg-dark text-white" style="border-radius: 1rem">
+          <div class="card-body p-5 text-center">
+            <div class="mb-md-5 mt-md-4 pb-5">
+              <h2 class="fw-bold mb-4 text-uppercase">User Registration</h2>
+
+              <form >
+                <div class="form-group row mb-4">
+                  <label for="name" class="col-sm-3 col-form-label text-right"
+                    >Name</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      [(ngModel)]="user.name"
+                      [ngModelOptions]="{ standalone: true }"
+                      placeholder="Enter your name"
+                      required
+                    />
+
+
+
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label
+                    for="mobileNo"
+                    class="col-sm-3 col-form-label text-right"
+                    >Mobile Number</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="tel"
+                      id="mobileNo"
+                      class="form-control"
+                      id="mobileNo"
+                      [(ngModel)]="user.mobileNo"
+                      [ngModelOptions]="{ standalone: true }"
+                      placeholder="Enter your mobile number"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label
+                    for="emailId"
+                    class="col-sm-3 col-form-label text-right"
+                    >Email</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      id="emailId"
+                      class="form-control"
+                      [(ngModel)]="user.emailId"
+                      [ngModelOptions]="{ standalone: true }"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label
+                    for="password"
+                    class="col-sm-3 col-form-label text-right"
+                    >Password</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="password"
+                      id="password"
+                      class="form-control"
+                      [(ngModel)]="user.password"
+                      [ngModelOptions]="{ standalone: true }"
+                      placeholder="Enter your password"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label
+                    for="address"
+                    class="col-sm-3 col-form-label text-right"
+                    >Address</label
+                  >
+                  <div class="col-sm-9">
+                    <textarea
+                      class="form-control"
+                      id="address"
+                      [(ngModel)]="user.address"
+                      [ngModelOptions]="{ standalone: true }"
+                      rows="3"
+                      placeholder="Enter your address"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label for="city" class="col-sm-3 col-form-label text-right"
+                    >City</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      id="city"
+                      class="form-control"
+                      [(ngModel)]="user.city"
+                      [ngModelOptions]="{ standalone: true }"
+                      placeholder="Enter your city"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label for="state" class="col-sm-3 col-form-label text-right"
+                    >State</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      id="state"
+                      class="form-control"
+                      [(ngModel)]="user.state"
+                      [ngModelOptions]="{ standalone: true }"
+                      placeholder="Enter your state"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label
+                    for="pinCode"
+                    class="col-sm-3 col-form-label text-right"
+                    >Pin Code</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      id="pinCode"
+                      class="form-control"
+                      [(ngModel)]="user.pinCode"
+                      [ngModelOptions]="{ standalone: true }"
+                      placeholder="Enter your pin code"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label
+                    for="addressType"
+                    class="col-sm-3 col-form-label text-right"
+                    >Address Type</label
+                  >
+                  <div class="col-sm-9">
+                    <select
+                      class="form-control"
+                      id="addressType"
+                      [(ngModel)]="user.addressType"
+                      [ngModelOptions]="{ standalone: true }"
+                    >
+                      <option value="home">Home</option>
+                      <option value="work">Work</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label for="role" class="col-sm-3 col-form-label text-right"
+                    >Role</label
+                  >
+                  <div class="col-sm-9">
+                    <select
+                      class="form-control"
+                      id="role"
+                      [(ngModel)]="user.role"
+                      [ngModelOptions]="{ standalone: true }"
+                    >
+                      <option value="admin">admin</option>
+                      <option value="user">user</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <div class="offset-sm-3 col-sm-9 text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-lg btn-block"
+                      (click)="newUser()"
+                    >
+                      Register
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

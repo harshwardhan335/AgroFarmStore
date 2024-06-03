@@ -1,0 +1,74 @@
+
+
+  
+  .card {
+    background-color: #c6d1dce7;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.2s;
+
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card-text{
+    padding: 5px;
+    color:darkblue
+  }
+
+  .background-image{
+    background-image:url("C:/Users/2317389/OneDrive - Cognizant/Desktop/AgroFarm/AgroFarm-front/src/assets/productsimg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 300px 0;
+    display:relative;
+    
+}
+h1{
+  text-align: center;
+  color: rgb(215, 13, 13);
+    text-decoration: solid;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: -650 px;
+    font-display: 150px;
+    text-shadow: #dfe2e9cc;
+    margin-bottom: 100px;
+    font-size: 35;
+
+}
+@keyframes fadeIn {
+  from{opacity: 0;}
+  to {opacity: 1;}
+  
+}
+
+.sort-bar-design{
+  position: absolute; /* Positioning relative to the nearest positioned ancestor */
+  right: 0; /* Positioning it on the left side of the page */
+  top: 21.2%; /* Centering it vertically */
+  transform: translateY(-50%); /* Adjusting for the height of the search bar */
+  padding-right: 9px;
+
+}
+.search-bar-design {
+  width: 380px;
+  position: absolute; /* Positioning relative to the nearest positioned ancestor */
+  left: -1; /* Positioning it on the right side of the page */
+  top: 20%; /* Centering it vertically */
+  transform: translateY(-50%); /* Adjusting for the height of the search bar */
+  padding-right: 15px;
+  height: 70px;
+}   
+  mat-form-field {
+    /* width: 160px; Adjust this value to change the width of the search bar */
+    border: auto whitesmoke;
+    border-radius: 5px 10px;
+    padding: 10px;
+    /* height: 74px; */
+    padding: 5px 10px;
+    color: ghostwhite;
+    padding-right: 10px;
+  }
+

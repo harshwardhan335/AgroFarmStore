@@ -1,0 +1,7 @@
+.orderimage{
+    background-image: url("C:/Users/2317389/OneDrive - Cognizant/Desktop/AgroFarm/AgroFarm-front/src/assets/orderPageadmin.jpg"); 
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    display:relative;
+}

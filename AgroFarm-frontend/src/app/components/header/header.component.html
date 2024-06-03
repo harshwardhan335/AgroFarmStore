@@ -1,0 +1,28 @@
+
+
+
+
+<nav class="navbar sticky-top navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand text-custom"routerLink="/homepage" style="padding-left: 20px;"> Agro Farming Store</a>
+    <div class="navbar-collapse" style="padding-right: 30px;">
+        <ul class="navbar-nav" style="margin-left: 300px;">
+            <li class="nav-item" routerlinkactive="active" style="left: 20px;">
+                <a class="nav-link" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item" routerlinkactive="active">
+                <a class="nav-link" routerLink="/products">Products</a>
+            </li>
+            <li class="nav-item" routerlinkactive="active">
+                <a class="nav-link" routerLink="/user/orders">Orders</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto" style="margin-right: 28px; font-size: 18px;">
+            <li class="nav-item" routerlinkactive="active">
+                <a class="nav-link" routerLink="/carts" style="padding-right: 33px;">Cart</a>
+            </li>
+        </ul>
+        <a routerLink="" style="margin-right: 2px;">
+            <button class="btn btn-danger" (click)="logOut()">Log Out</button>
+        </a>
+    </div>
+</nav>
